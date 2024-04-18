@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PickerTestApp: App {
+	@State private var data = Data(title: "Foobar")
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			ContentView(data: $data)
         }
     }
 }

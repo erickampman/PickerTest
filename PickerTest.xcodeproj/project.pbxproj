@@ -14,6 +14,8 @@
 		E45281732BD159D2002FC7D3 /* PickerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45281722BD159D2002FC7D3 /* PickerTestTests.swift */; };
 		E452817D2BD159D2002FC7D3 /* PickerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452817C2BD159D2002FC7D3 /* PickerTestUITests.swift */; };
 		E452817F2BD159D2002FC7D3 /* PickerTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452817E2BD159D2002FC7D3 /* PickerTestUITestsLaunchTests.swift */; };
+		E452818C2BD159FD002FC7D3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452818B2BD159FD002FC7D3 /* Data.swift */; };
+		E452818E2BD15DC1002FC7D3 /* DisableableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452818D2BD15DC1002FC7D3 /* DisableableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		E45281782BD159D2002FC7D3 /* PickerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E452817C2BD159D2002FC7D3 /* PickerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTestUITests.swift; sourceTree = "<group>"; };
 		E452817E2BD159D2002FC7D3 /* PickerTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E452818B2BD159FD002FC7D3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E452818D2BD15DC1002FC7D3 /* DisableableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				E45281602BD159D1002FC7D3 /* PickerTestApp.swift */,
 				E45281622BD159D1002FC7D3 /* ContentView.swift */,
+				E452818D2BD15DC1002FC7D3 /* DisableableView.swift */,
+				E452818B2BD159FD002FC7D3 /* Data.swift */,
 				E45281642BD159D1002FC7D3 /* Assets.xcassets */,
 				E45281662BD159D1002FC7D3 /* PickerTest.entitlements */,
 				E45281672BD159D1002FC7D3 /* Preview Content */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45281632BD159D1002FC7D3 /* ContentView.swift in Sources */,
+				E452818C2BD159FD002FC7D3 /* Data.swift in Sources */,
 				E45281612BD159D1002FC7D3 /* PickerTestApp.swift in Sources */,
+				E452818E2BD15DC1002FC7D3 /* DisableableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

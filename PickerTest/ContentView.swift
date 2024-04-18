@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+	@Binding var data: Data
+	@State private var isDisabled = true
+		
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+		Form {
+			Section(header: Text("Data").font(.title)) {
+				TextField("Title", text: $data.title)
+					.task(id: data.title) {
+						isDisabled = data.title.isEmpty
+					}
+				
+				DisableableView(disabled: $isDisabled, disabledText: "Title must not be empty to set Type") {
+					Picker("Type", selection: $data.type) {
+						ForEach(DataType.allCases) { type in
+							Text(type.stringValue)
+						}
+					}
+				}
+			}
+		}
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+	@State var data = Data()
+	return ContentView(data: $data)
 }
